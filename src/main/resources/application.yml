@@ -1,0 +1,7 @@
+server:
+  port: 80
+
+# ElasticSearch集群的uri
+spring:
+  elasticsearch:
+    uris: http://192.168.2.157:9200
