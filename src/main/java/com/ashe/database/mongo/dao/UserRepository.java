@@ -8,5 +8,12 @@ import java.util.Optional;
 
 @Repository
 public interface UserRepository extends MongoRepository<User, String> {
+
+    /**
+     * 获取集合下所有文档的数量
+     */
+    long count();
+
+
     Optional<User> findByName(String name);
 }
