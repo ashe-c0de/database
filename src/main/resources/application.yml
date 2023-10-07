@@ -1,7 +1,12 @@
 server:
   port: 80
 
-# ElasticSearch集群的uri
 spring:
+  # ElasticSearch集群的uri
   elasticsearch:
     uris: http://192.168.2.157:9200
+  data:
+    # MongoDB配置
+    mongodb:
+      uri: mongodb://192.168.2.157:27017/test
+
